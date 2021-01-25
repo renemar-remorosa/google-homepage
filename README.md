@@ -1,0 +1,1 @@
+This is a project for The Odin Project where I will reconstruct the Google homepage.
