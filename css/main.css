@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+html,
 body {
 	box-sizing: border-box;
 	font-family: Open Sans, sans-serif;
@@ -31,6 +32,10 @@ ul {
 a {
 	font-size: 1.2em;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* MAIN */
@@ -72,6 +77,10 @@ input[type="submit"] {
 	color: #555;
 }
 
+input[type="submit"]:hover {
+	box-shadow: 0 0 2px #555;
+}
+
 main div.language p {
 	color: #555;
 	margin: 20px 0 100px 0;
@@ -85,36 +94,40 @@ main div.language p a {
 
 /* FOOTER */
 
-footer div {
-	position: relative;
-	bottom: -45px;
+footer {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	position: fixed;
 	background: #eee;
-	border: 1px solid #ddd;
+	width: 100%;
+}
+
+footer > div {
 	margin: 0;
 	padding: 0;
+	border-top: 1px solid rgb(201, 201, 201);
 }
 
-footer div p {
-	color: #666;
-	font-size: 14px;
-	padding-left: 20px;
-}
-
-footer div.footer-bottom ul {
+footer p {
+	font-size: 1.5rem;
+	color: #555;
 	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #eee;
+	padding: 10px 0 10px 20px;
 }
 
-footer div.footer-bottom ul li {
-	float: left;
+footer div.footer-bottom {
+	margin: 0;
+	padding: 10px 0 10px 10px;
 }
 
-footer div.footer-bottom ul li a {
-	display: block;
-	color: #666;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+.footer-bottom ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.footer-bottom ul li a {
+	color: #555;
+	font-size: 1.5rem;
 }
